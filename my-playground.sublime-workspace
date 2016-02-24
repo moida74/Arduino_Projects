@@ -35,7 +35,7 @@
 			"file": "Time Machine/Tidsmaskin.ino",
 			"settings":
 			{
-				"buffer_size": 3598,
+				"buffer_size": 4312,
 				"line_ending": "Unix"
 			}
 		}
@@ -47,13 +47,57 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "git push",
+		"height": 367.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
 			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"set syntax",
+				"Set Syntax: Arduino"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			],
+			[
+				"PACKA",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
+			],
+			[
 				"git push",
-				"Git: Push Current Branch"
+				"Git: Push"
+			],
+			[
+				"git:co",
+				"Git: Quick Commit"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:commit",
+				"Git: Quick Commit"
 			],
 			[
 				"git ad",
@@ -68,13 +112,16 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 392.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 157.0,
+		"height": 171.0,
 		"history":
 		[
+			"cd ..",
+			"ls",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
 		]
 	},
 	"distraction_free":
@@ -88,20 +135,10 @@
 	},
 	"file_history":
 	[
-		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin/Tidsmaskin-TIme-Machine.ino",
-		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin.ino",
-		"/Users/morten/Dropbox/Arduino-1.6.5.app/Contents/Java/libraries/Servo/examples/Knob/Knob.ino",
-		"/Users/morten/Documents/Arduino/Tidsmaskin/Tidsmaskin.ino",
-		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin/Tidsmaskin.ino",
-		"/Users/morten/Documents/Arduino/8x8_led_matrix_test/8x8_led_matrix_test.ino",
-		"/Users/morten/Documents/Arduino/sinePlayer2/sinePlayer2.ino",
-		"/Users/morten/Documents/Arduino/SineSound-Morten/SineSound-Morten.ino",
-		"/Users/morten/Documents/Arduino/mySketch/mySketch.ino",
-		"/Users/morten/Documents/Arduino/libraries/Debounce/Debounce.cpp",
-		"/Users/morten/Dropbox/Arduino-1.6.5.app/Contents/Java/libraries/Robot_Control/examples/explore/R01_Logo/R01_Logo.ino",
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/User/Stino/Preferences.stino-settings",
-		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
-		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/Stino-ST4ArduinoIDE/preset/platform.settings"
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/Stino-ST4ArduinoIDE/Default (OSX).sublime-keymap",
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/Colorsublime/Colorsublime.sublime-settings"
 	],
 	"find":
 	{
@@ -146,15 +183,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3598,
+						"buffer_size": 4312,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								206,
-								206
+								2419,
+								2419
 							]
 						],
 						"settings":
@@ -162,7 +199,7 @@
 							"syntax": "Packages/User/Stino/Arduino.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2251.0,
+						"translation.y": 1963.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -207,6 +244,10 @@
 		"height": 100.0
 	},
 	"output.1456136370.361623":
+	{
+		"height": 100.0
+	},
+	"output.Time Machine":
 	{
 		"height": 100.0
 	},
@@ -398,6 +439,26 @@
 	{
 		"height": 94.0
 	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Time Machine|1456314461.942299":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Time Machine|1456324334.250433":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Time Machine|1456324422.647317":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Time Machine|1456324471.853888":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Time Machine|1456324482.717526":
+	{
+		"height": 94.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -405,6 +466,10 @@
 	"output.git":
 	{
 		"height": 142.0
+	},
+	"output.stino_log":
+	{
+		"height": 100.0
 	},
 	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456160896.737794":
 	{
