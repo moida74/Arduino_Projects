@@ -1,0 +1,1456 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"a"
+			],
+			[
+				"pre",
+				"previous_state"
+			],
+			[
+				"debounce",
+				"SoftwareDebounce"
+			],
+			[
+				"cur",
+				"current_state"
+			],
+			[
+				"digita",
+				"digitalWrite	Arduino digitalWrite"
+			],
+			[
+				"del",
+				"delayMicroseconds"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Time Machine/Tidsmaskin.ino",
+			"settings":
+			{
+				"buffer_size": 3598,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "git push",
+		"selected_items":
+		[
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin/Tidsmaskin-TIme-Machine.ino",
+		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin.ino",
+		"/Users/morten/Dropbox/Arduino-1.6.5.app/Contents/Java/libraries/Servo/examples/Knob/Knob.ino",
+		"/Users/morten/Documents/Arduino/Tidsmaskin/Tidsmaskin.ino",
+		"/Users/morten/GitHub/Arduino_Projects/Tidsmaskin/Tidsmaskin.ino",
+		"/Users/morten/Documents/Arduino/8x8_led_matrix_test/8x8_led_matrix_test.ino",
+		"/Users/morten/Documents/Arduino/sinePlayer2/sinePlayer2.ino",
+		"/Users/morten/Documents/Arduino/SineSound-Morten/SineSound-Morten.ino",
+		"/Users/morten/Documents/Arduino/mySketch/mySketch.ino",
+		"/Users/morten/Documents/Arduino/libraries/Debounce/Debounce.cpp",
+		"/Users/morten/Dropbox/Arduino-1.6.5.app/Contents/Java/libraries/Robot_Control/examples/explore/R01_Logo/R01_Logo.ino",
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/User/Stino/Preferences.stino-settings",
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/morten/Library/Application Support/Sublime Text 3/Packages/Stino-ST4ArduinoIDE/preset/platform.settings"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"out"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Time Machine/Tidsmaskin.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2251.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.1456136114.634456":
+	{
+		"height": 100.0
+	},
+	"output.1456136370.361623":
+	{
+		"height": 100.0
+	},
+	"output.bootloader.1456139507.930697":
+	{
+		"height": 100.0
+	},
+	"output.bootloader.1456144151.46336":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456160867.676561":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456178606.913935":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456178634.378862":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456178650.352454":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456178736.373307":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456179081.657212":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456179108.328311":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456179796.041349":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456179857.814605":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456179917.835913":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180232.044184":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180280.223547":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180415.098723":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180434.113934":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180449.835459":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456180555.013751":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181087.107215":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181333.082516":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181407.375819":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181480.189664":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181641.377404":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456181866.839958":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/SineSound-Morten|1456182257.114168":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456253744.947896":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456265135.374824":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456265174.079331":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456265213.236447":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456265522.418733":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456267428.078647":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456268226.429425":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456268424.846582":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456268441.344172":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456268518.915814":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456268627.904221":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456269245.988997":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456269982.16586":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456270499.16536":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456270823.434564":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/Tidsmaskin|1456271269.068472":
+	{
+		"height": 94.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/mySketch|1456136161.370973":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/mySketch|1456136224.049749":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/mySketch|1456136255.665057":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/mySketch|1456136396.32781":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/morten/Documents/Arduino/mySketch|1456136405.552207":
+	{
+		"height": 100.0
+	},
+	"output.build|/Users/morten/GitHub/Arduino_Projects/Tidsmaskin|1456304265.112655":
+	{
+		"height": 94.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 142.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456160896.737794":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456160955.010479":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161026.621189":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161222.782784":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161264.972782":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161322.370636":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161441.534557":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161597.224727":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161615.472419":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161623.207771":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456161632.495745":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162150.061494":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162197.467886":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162213.05116":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162230.86062":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162258.121732":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162367.15858":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162383.693264":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162396.41269":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162431.795631":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162441.811208":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456162526.400156":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163274.950709":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163310.332681":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163403.289423":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163472.98286":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163619.993874":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163635.857231":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163647.450325":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/8x8_led_matrix_test|1456163813.786626":
+	{
+		"height": 487.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181092.588942":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181254.783198":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181338.474155":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181413.583738":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181441.166826":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181487.277191":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181526.709298":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181897.942651":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181984.995775":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456181991.429092":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182064.728857":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182088.024161":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182138.702104":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182158.405671":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182263.353976":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182276.505235":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182305.320592":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182318.303727":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182362.50249":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182371.590056":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182381.605274":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182390.357628":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182399.741118":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182422.540536":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182430.148403":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182439.779809":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182447.963557":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182455.403463":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182464.403215":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182653.604311":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182739.505321":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182756.785041":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182791.351642":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182801.735272":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182812.928541":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182822.398451":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182837.414162":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182854.541311":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182884.198992":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456182894.476008":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/SineSound-Morten|1456183105.26245":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456253693.566638":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456253833.853974":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456253913.914362":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254095.479839":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254104.558409":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254755.040584":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254782.071043":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254845.523353":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254952.35791":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254971.23594":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456254994.290747":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255004.626053":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255019.689194":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255038.927557":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255057.398885":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255067.886518":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255076.325948":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456255379.756176":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256082.195689":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256109.682012":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256124.545246":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256213.013895":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256222.93125":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456256244.27445":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456257651.76054":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456257675.015018":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456257728.243862":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456257754.954592":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456257933.080106":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258524.877965":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258554.524343":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258560.539778":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258570.052694":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258623.738339":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258654.719463":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258667.645746":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456258901.81604":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456259174.008285":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456259191.695312":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456259218.343534":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456259306.448943":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456259321.471593":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456263152.981173":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456265214.69225":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456265523.730693":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456265543.377752":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267431.222654":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267479.877107":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267489.478172":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267570.689829":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267585.306528":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267610.056471":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267790.484345":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456267843.969383":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268237.388704":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268522.835799":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268544.474989":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268629.400365":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268643.432352":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268653.239566":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268661.383288":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268673.94307":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268684.094995":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456268828.234284":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269071.61034":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269084.681942":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269240.341135":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269247.772743":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269267.932021":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269331.745899":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269362.849382":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269393.528305":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269414.735389":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269445.208202":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269468.26165":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269624.352713":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269937.167331":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456269991.461189":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270151.408155":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270184.959013":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270500.988967":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270529.556288":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270646.07194":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270825.082519":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456270941.023206":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271015.556837":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271031.995987":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271049.459945":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271270.86873":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271549.387783":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271575.155105":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271598.369977":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271628.224923":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456271644.384251":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272137.833923":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272157.176326":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272186.855285":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272212.630521":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272248.237816":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/Tidsmaskin|1456272331.579727":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/libraries/Debounce|1456142198.602595":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136230.157176":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136411.856922":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136438.293941":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136476.812812":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136518.302987":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136540.232745":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136593.68293":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136614.833056":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136631.016087":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136639.073629":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136652.793014":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136671.848596":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136698.68539":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136718.316661":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136729.276472":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136758.307747":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456136800.563147":
+	{
+		"height": 185.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456137612.445135":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138036.718173":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138045.118036":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138062.725147":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138123.683025":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138148.801795":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138446.439844":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138469.622634":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138490.26174":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138657.568184":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456138967.084972":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139029.763028":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139083.073095":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139174.597373":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139200.54106":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139221.10025":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139282.498064":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139445.684207":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456139519.017626":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140054.088519":
+	{
+		"height": 136.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140099.482382":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140133.227438":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140165.746742":
+	{
+		"height": 262.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140460.448331":
+	{
+		"height": 245.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140880.305995":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456140986.63145":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142150.292405":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142172.458523":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142195.962681":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142491.064209":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142600.476469":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142639.883084":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142663.306068":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142693.088544":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142777.846032":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142795.453574":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456142811.060807":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143324.730866":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143388.35415":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143398.38421":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143437.334818":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143448.249789":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143467.533998":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143500.03846":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143530.651863":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143615.800632":
+	{
+		"height": 100.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456143682.206383":
+	{
+		"height": 137.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456144103.678995":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456144124.878683":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456144160.004857":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/mySketch|1456144332.472976":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183364.427432":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183413.569966":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183437.77692":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183461.488093":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183469.847738":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183489.359169":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183497.014401":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183698.367904":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183759.67772":
+	{
+		"height": 94.0
+	},
+	"output.upload|/Users/morten/Documents/Arduino/sinePlayer2|1456183780.934931":
+	{
+		"height": 94.0
+	},
+	"pinned_build_system": "",
+	"project": "my-playground.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 145.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
