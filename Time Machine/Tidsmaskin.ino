@@ -1,9 +1,7 @@
 /*  
-Tidsmaskin - a Time Machine
-By Morten and Kristoffer 2016
-
-Unfinished version 0.1
-
+	Tidsmaskin - a Time Machine
+	By Morten and Kristoffer, February 2016
+	Version 1.0
 */
 
 
@@ -15,6 +13,24 @@ Unfinished version 0.1
 #define d2 A2
 #define d3 A3
 #define d4 A4
+
+const byte d[4] ={d1,d2,d3,d4};
+
+
+/* Define 8-bit digit characters */
+const byte digit[11] ={
+	B01111110, // 0..9
+	B00001100, 
+	B10110110, 
+	B10011110,
+	B11001100,
+	B11011010,
+	B11111010,
+	B00001110,
+	B11111110,
+	B11011110,
+	B000000000 // blank (whitespace)
+};
 
 /* Define input pins */
 int potensiometer = A0;
@@ -34,76 +50,74 @@ int DS = 6;
 int SH_CP = 7;
 int ST_CP = 8;
 
-/* Define digits */
-const byte digit[11] ={
-	B01111110,
-	B00001100,
-	B10110110,
-	B10011110,
-	B11001100,
-	B11011010,
-	B11111010,
-	B00001110,
-	B11111110,
-	B11011110,
-	000000000
-};
-
-const byte d[4] ={A1,A2,A3,A4};
-
+/* Servo for the year-o-meter hand */
 
 Servo tidsviser; 
 
+/* Setup */
+
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(A0, INPUT);
-  pinMode(knapp, INPUT);
-  pinMode(led1, OUTPUT);
-  pinMode(led2, OUTPUT);
-  pinMode(led3, OUTPUT);
-  pinMode(led4, OUTPUT);
 
-  pinMode(d1,OUTPUT);
-  pinMode(d2,OUTPUT);
-  pinMode(d3,OUTPUT);
-  pinMode(d4,OUTPUT);
+	// Define input pins
 
-  pinMode(DS, OUTPUT);
-  pinMode(SH_CP, OUTPUT);
-  pinMode(ST_CP, OUTPUT);
+	pinMode(A0, INPUT);
+	pinMode(knapp, INPUT);
 
+	// Define output pins
 
-  digitalWrite(d1,LOW);
-  digitalWrite(d2,LOW);
-  digitalWrite(d3,LOW);
-  digitalWrite(d4,LOW);
+	pinMode(led1, OUTPUT);
+	pinMode(led2, OUTPUT);
+	pinMode(led3, OUTPUT);
+	pinMode(led4, OUTPUT);
+	pinMode(d1,OUTPUT);
+	pinMode(d2,OUTPUT);
+	pinMode(d3,OUTPUT);
+	pinMode(d4,OUTPUT);
+	pinMode(DS, OUTPUT);
+	pinMode(SH_CP, OUTPUT);
+	pinMode(ST_CP, OUTPUT);
 
-  clearDigits();
+	// Init LED display
 
-  digitalWrite(led1,LOW);
-  digitalWrite(led2,LOW);
-  digitalWrite(led3,LOW);
-  digitalWrite(led4,LOW);
+	digitalWrite(d1,LOW);
+	digitalWrite(d2,LOW);
+	digitalWrite(d3,LOW);
+	digitalWrite(d4,LOW);
+	clearDigits();
 
-  tidsviser.attach(servoPin);  
+	// Init LED lamps
 
+	digitalWrite(led1,LOW);
+	digitalWrite(led2,LOW);
+	digitalWrite(led3,LOW);
+	digitalWrite(led4,LOW);
 
-  Serial.begin(9600);
+	// Attach year-o-meter
+
+	tidsviser.attach(servoPin);  
+
+	// Debug via serial
+
+	Serial.begin(9600);
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+/* Main program loop */
 
-  	int i = analogRead(potensiometer);
+void loop() {
+
+	// Read potentiometer and map values in years and degrees
+
+	int i = analogRead(potensiometer);
   	int aar = map(i,0,1023,0,2000);
     int deg = map(i,0,1023,180,20);
 	
-	tidsviser.write(deg);
+	tidsviser.write(deg); 	// Update year-o-meter
 
-	if (digitalRead(knapp)==LOW) {
-		
+	if (digitalRead(knapp)==LOW) { // Button pressed
 
 		int d = 100;
+
+		// Flash the LED bulbs
 		
 		for(int k=0;k<3;k++) {
 
@@ -122,37 +136,31 @@ void loop() {
 		} 
 		
 		digitalWrite(led4,LOW);
+
+		// Count LED display from 0 to selected year
+
 		int c = constrain(aar/117,1,1000);
 		for (int i=0;i<aar;i+=c){
 
 			writeNumberToLED(i,10);
 		} 
 		delay(150);
+
+		// Flash selected year on LED display
+
 		writeNumberToLED(aar,200);
 		delay(150);
 		writeNumberToLED(aar,200);
 		delay(150);
 		writeNumberToLED(aar,2000);
-
-
-
-
-	} else {
-		digitalWrite(led1,LOW);
-		digitalWrite(led2,LOW);
-		digitalWrite(led3,LOW);
-		digitalWrite(led4,LOW);
-
-	}
+	} 
 }
 
 /* 
 	**** SPECIAL FUNCTIONS **** 	
 */
 
-
-
-// Write digit to shift register and output to LED
+// Write an 8-bit character (dig) to the shift register and output it to a position (pos) on the LED
 
 void outputDigit(int pos, int dig) {
 
@@ -160,11 +168,12 @@ void outputDigit(int pos, int dig) {
 	digitalWrite(ST_CP, LOW); 
 	shiftOut(DS, SH_CP, MSBFIRST, digit[dig]);
 	digitalWrite(ST_CP, HIGH); 
-	digitalWrite(d[pos-1], LOW);
+	digitalWrite(d[pos-1], LOW); // output
 	delay(1);
 }
 
 // Clear LED digits
+
 void clearDigits() {
 
 	digitalWrite(DS,LOW);
@@ -179,35 +188,34 @@ void clearDigits() {
 	digitalWrite(ST_CP,LOW);
 }
 
-// Write a number to the LED display for a given number of milliseconds
+// Write a number (number) to the LED display for a given number of milliseconds (duration)
 
 void writeNumberToLED(int number,unsigned long duration) {
 
-
-	int  t1000 = constrain(int(number/1000),0,9);
-	int  t100  = constrain((int(number-t1000*1000)/100),0,9);
-	int  t10   = constrain((int(number-t1000*1000-t100*100)/10),0,9);
-	int  t1    = constrain((int(number-t1000*1000-t100*100-t10*10)),0,9);
+	int t1000 = constrain(int(number/1000),0,9);
+	int t100  = constrain((int(number-t1000*1000)/100),0,9);
+	int t10   = constrain((int(number-t1000*1000-t100*100)/10),0,9);
+	int t1    = constrain((int(number-t1000*1000-t100*100-t10*10)),0,9);
 
 	if (t1000==0) {
-			t1000=10;
-			if (t100==0) {
-				t100=10;
-				if (t10==0) {
-					t10=10;
-				}
+		t1000=10;
+		if (t100==0) {
+			t100=10;
+			if (t10==0) {
+				t10=10;
 			}
-		}  
+		}
+	}  
 
 	unsigned long ms = millis();
 
 	while (millis()<ms+duration) {
-			
-				  outputDigit(1,t1000);
-				  outputDigit(2,t100);
-	  			  outputDigit(3,t10);
-				  outputDigit(4,t1);
-			}
+	
+		  outputDigit(1,t1000);
+		  outputDigit(2,t100);
+			  outputDigit(3,t10);
+		  outputDigit(4,t1);
+	}
 			
 	clearDigits();
 
