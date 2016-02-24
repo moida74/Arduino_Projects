@@ -5,18 +5,14 @@
 	Version 1.0, February 2016
 */
 
-
 #include <Servo.h>
-
 
 /* Define 4 digit 7 segment LED (SMA20564) d1-d4 pins */
 #define d1 A1
 #define d2 A2
 #define d3 A3
 #define d4 A4
-
 const byte d[4] ={d1,d2,d3,d4};
-
 
 /* Define 8-bit digit characters */
 const byte digit[11] ={
@@ -60,12 +56,10 @@ Servo tidsviser;
 void setup() {
 
 	// Define input pins
-
 	pinMode(A0, INPUT);
 	pinMode(knapp, INPUT);
 
 	// Define output pins
-
 	pinMode(led1, OUTPUT);
 	pinMode(led2, OUTPUT);
 	pinMode(led3, OUTPUT);
@@ -79,7 +73,6 @@ void setup() {
 	pinMode(ST_CP, OUTPUT);
 
 	// Init LED display
-
 	digitalWrite(d1,LOW);
 	digitalWrite(d2,LOW);
 	digitalWrite(d3,LOW);
@@ -87,18 +80,15 @@ void setup() {
 	clearDigits();
 
 	// Init LED lamps
-
 	digitalWrite(led1,LOW);
 	digitalWrite(led2,LOW);
 	digitalWrite(led3,LOW);
 	digitalWrite(led4,LOW);
 
 	// Attach year-o-meter
-
 	tidsviser.attach(servoPin);  
 
 	// Debug via serial
-
 	Serial.begin(9600);
 }
 
@@ -118,7 +108,7 @@ void loop() {
 
 		int d = 100;
 
-		// Flash the LED bulbs
+		// Flash the LED bulbs:
 		
 		for(int k=0;k<3;k++) {
 
@@ -138,7 +128,7 @@ void loop() {
 		
 		digitalWrite(led4,LOW);
 
-		// Count LED display from 0 to selected year
+		// Count LED display from 0 to selected year:
 
 		int c = constrain(aar/117,1,1000);
 		for (int i=0;i<aar;i+=c){
@@ -157,14 +147,11 @@ void loop() {
 	} 
 }
 
-
-
 /* 
 	**** SPECIAL FUNCTIONS **** 	
 */
 
 // Write an 8-bit character (dig) to the shift register and output it to a position (pos) on the LED
-
 void outputDigit(int pos, int dig) {
 
 	for (int i=0;i<4;i++) digitalWrite(d[i], HIGH);	// stop output on all LEDs
@@ -176,13 +163,11 @@ void outputDigit(int pos, int dig) {
 }
 
 // Clear LED digits
-
 void clearDigits() {
 
 	digitalWrite(DS,LOW);
 	digitalWrite(SH_CP,LOW);
 	digitalWrite(ST_CP,LOW);
-
 	for(int i=0;i<8;i++) {
 		digitalWrite(SH_CP,HIGH);
 		digitalWrite(SH_CP,LOW);
@@ -195,33 +180,30 @@ void clearDigits() {
 
 void writeNumberToLED(int input_number,unsigned long duration) {
 
+	// Split digits:
 	int t1 = (input_number%10);
 	int t10 = ((input_number/10)%10);
 	int t100 = ((input_number/100)%10);
 	int t1000 = (input_number/1000);
 
+	// Remove leading zeros:
 	if (t1000==0) {
-		t1000=10;
-		if (t100==0) {
-			t100=10;
-			if (t10==0) {
-				t10=10;
-			}
-		}
-	}  
+		t1000=10; 	
+	if (t100==0) {
+		t100=10; 	
+	if (t10==0) {
+		t10=10; 	
+	}}}  
 
-	unsigned long ms = millis();
-
-	// Output digits using multiplexing
-
+	// Output digits using multiplexing:
+	unsigned long ms = millis();	
 	while (millis()<ms+duration) {
-			
 		  outputDigit(1,t1000);
 		  outputDigit(2,t100);
 		  outputDigit(3,t10);
 		  outputDigit(4,t1);
 	}
-			
+	
+	// Clean up:
 	clearDigits();
-
 } 
