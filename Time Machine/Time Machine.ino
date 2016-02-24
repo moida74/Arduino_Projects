@@ -177,7 +177,6 @@ void clearDigits() {
 }
 
 // Write a number (number) to the LED display for a given number of milliseconds (duration)
-
 void writeNumberToLED(int input_number,unsigned long duration) {
 
 	// Split digits:
