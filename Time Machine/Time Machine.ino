@@ -193,17 +193,7 @@ void clearDigits() {
 
 // Write a number (number) to the LED display for a given number of milliseconds (duration)
 
-void writeNumberToLED(int input_›number,unsigned long duration) {
-
-
-/*
-
-	int t1000 = constrain(int(number/1000),0,9);
-	int t100  = constrain((int(number-t1000*1000)/100),0,9);
-	int t10   = constrain((int(number-t1000*1000-t100*100)/10),0,9);
-	int t1    = constrain((int(number-t1000*1000-t100*100-t10*10)),0,9);
-
-*/
+void writeNumberToLED(int input_number,unsigned long duration) {
 
 	int t1 = (input_number%10);
 	int t10 = ((input_number/10)%10);
