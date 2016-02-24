@@ -1,7 +1,7 @@
 /*  
 	Tidsmaskin - a Time Machine
 	Invented by Kristoffer 
-	With assistance from dad
+	with assistance from Dad
 	Version 1.0, February 2016
 */
 
@@ -29,6 +29,9 @@ const byte digit[11] ={
 	B00000000 // blank (whitespace)
 };
 
+/* Servo for the year-o-meter hand */
+Servo tidsviser; 
+
 /* Define input pins */
 int potensiometer = A0;
 int knapp = 13;
@@ -47,10 +50,10 @@ int DS = 6;
 int SH_CP = 7;
 int ST_CP = 8;
 
-/* Servo for the year-o-meter hand */
+/* Define buzzer pins */
+int buzzer = 9;
 
-Servo tidsviser; 
-
+int globalDelay = 1;
 /* Setup */
 
 void setup() {
@@ -71,6 +74,7 @@ void setup() {
 	pinMode(DS, OUTPUT);
 	pinMode(SH_CP, OUTPUT);
 	pinMode(ST_CP, OUTPUT);
+	pinMode(buzzer, OUTPUT);
 
 	// Init LED display
 	digitalWrite(d1,LOW);
@@ -89,7 +93,17 @@ void setup() {
 	tidsviser.attach(servoPin);  
 
 	// Debug via serial
+	
 	Serial.begin(9600);
+
+	// Ready sound
+	tone(buzzer,1000,50);
+	delay(100);
+	tone(buzzer,2000,50);
+	delay(100);
+	tone(buzzer,4000,50);
+	delay(100);
+
 }
 
 /* Main program loop */
@@ -97,7 +111,6 @@ void setup() {
 void loop() {
 
 	// Read potentiometer and map values in years and degrees
-
 	int i = analogRead(potensiometer);
   	int aar = map(i,0,1023,0,2000);
     int deg = map(i,0,1023,180,20);
@@ -108,41 +121,55 @@ void loop() {
 
 		int d = 100;
 
-		// Flash the LED bulbs:
-		
+		// Flash the LED bulbs and create random tones:	
 		for(int k=0;k<3;k++) {
 
 			digitalWrite(led4,LOW);
 			digitalWrite(led1,HIGH);
-			delay(d);
+			tone(buzzer,random(1000)+2000);
+			delay(d/2);
+			tone(buzzer,random(1000)+100,50);
+			delay(d/2);
 			digitalWrite(led1,LOW);
 			digitalWrite(led2,HIGH);
-			delay(d);
+			tone(buzzer,random(1000)+2000);
+			delay(d/2);
+			tone(buzzer,random(1000)+100,50);
+			delay(d/2);
 			digitalWrite(led2,LOW);
 			digitalWrite(led3,HIGH);
-			delay(d);
+			tone(buzzer,random(1000)+2000);
+			delay(d/2);
+			tone(buzzer,random(1000)+100,50);
+			delay(d/2);
 			digitalWrite(led3,LOW);
 			digitalWrite(led4,HIGH);
-			delay(d);
-		} 
+			tone(buzzer,random(1000)+2000);
+			delay(d/2);
+			tone(buzzer,random(1000)+100,50);
+			delay(d/2);
+	} 
 		
 		digitalWrite(led4,LOW);
 
-		// Count LED display from 0 to selected year:
-
+		// Count LED display from 0 to selected year while playing a sound:
 		int c = constrain(aar/117,1,1000);
 		for (int i=0;i<aar;i+=c){
-
+			tone(buzzer,i+100);
 			writeNumberToLED(i,10);
 		} 
+		noTone(buzzer);
 		delay(150);
 
-		// Flash selected year on LED display
-
+		// Flash selected year on LED display and beep:
+		int minFreq = 200 + aar;
+		tone(buzzer,minFreq/4,50);
 		writeNumberToLED(aar,200);
 		delay(150);
+		tone(buzzer,minFreq,50);
 		writeNumberToLED(aar,200);
 		delay(150);
+		tone(buzzer,minFreq*2,50);
 		writeNumberToLED(aar,2000);
 	} 
 }
@@ -159,7 +186,7 @@ void outputDigit(int pos, int dig) {
 	shiftOut(DS, SH_CP, MSBFIRST, digit[dig]); // write the character to the shift register
 	digitalWrite(ST_CP, HIGH); // start output
 	digitalWrite(d[pos-1], LOW); // output the digit to the chosen LED
-	delay(1); // A short delay to increase the brightness when multiplexing
+	delay(globalDelay); // A short delay to increase the brightness when multiplexing
 }
 
 // Clear LED digits
