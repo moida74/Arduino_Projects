@@ -1,6 +1,7 @@
 /*  
 	Tidsmaskin - a Time Machine
-	Invented by Kristoffer and Morten
+	Invented by Kristoffer 
+	With assistance from his father
 	Version 1.0, February 2016
 */
 
@@ -222,9 +223,3 @@ void writeNumberToLED(int number,unsigned long duration) {
 	clearDigits();
 
 } 
-
-
-
-
-
-
