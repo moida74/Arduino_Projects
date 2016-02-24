@@ -1,14 +1,14 @@
 /*  
 	Tidsmaskin - a Time Machine
-	By Morten and Kristoffer, February 2016
-	Version 1.0
+	Invented by Kristoffer and Morten
+	Version 1.0, February 2016
 */
 
 
 #include <Servo.h>
 
 
-/* Define 4 digit 7 segment LED (SMA20564) pins */
+/* Define 4 digit 7 segment LED (SMA20564) d1-d4 pins */
 #define d1 A1
 #define d2 A2
 #define d3 A3
@@ -29,7 +29,7 @@ const byte digit[11] ={
 	B00001110,
 	B11111110,
 	B11011110,
-	B000000000 // blank (whitespace)
+	B00000000 // blank (whitespace)
 };
 
 /* Define input pins */
