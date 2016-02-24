@@ -1,6 +1,8 @@
 /*  
 Tidsmaskin - a Time Machine
 By Morten and Kristoffer 2016
+
+Unfinished version
 */
 
 
