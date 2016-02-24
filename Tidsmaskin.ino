@@ -2,7 +2,8 @@
 Tidsmaskin - a Time Machine
 By Morten and Kristoffer 2016
 
-Unfinished version
+Unfinished version 0.1
+
 */
 
 
