@@ -164,12 +164,12 @@ void loop() {
 
 void outputDigit(int pos, int dig) {
 
-	for (int i=0;i<4;i++) digitalWrite(d[i], HIGH);	
-	digitalWrite(ST_CP, LOW); 
-	shiftOut(DS, SH_CP, MSBFIRST, digit[dig]);
-	digitalWrite(ST_CP, HIGH); 
-	digitalWrite(d[pos-1], LOW); // output
-	delay(1);
+	for (int i=0;i<4;i++) digitalWrite(d[i], HIGH);	// stop output on all LEDs
+	digitalWrite(ST_CP, LOW);  // stop output, prepare input
+	shiftOut(DS, SH_CP, MSBFIRST, digit[dig]); // write the character to the shift register
+	digitalWrite(ST_CP, HIGH); // start output
+	digitalWrite(d[pos-1], LOW); // output the digit to the chosen LED
+	delay(1); // A short delay to increase the brightness when multiplexing
 }
 
 // Clear LED digits
@@ -209,11 +209,13 @@ void writeNumberToLED(int number,unsigned long duration) {
 
 	unsigned long ms = millis();
 
+	// Output digits using multiplexing
+
 	while (millis()<ms+duration) {
-	
+			
 		  outputDigit(1,t1000);
 		  outputDigit(2,t100);
-			  outputDigit(3,t10);
+		  outputDigit(3,t10);
 		  outputDigit(4,t1);
 	}
 			
