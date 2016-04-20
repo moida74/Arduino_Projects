@@ -1,3 +1,15 @@
+/*
+
+Nexa controller
+
+By Morten Salthe & the kids
+
+- connects to your wifi
+- hosts a web server for control of 3 Nexa switches
+- NTP timer controlled on/off
+
+*/
+
 #include <ESP8266WiFi.h>
 #include <ArduinoOTA.h>
 #include <WiFiClient.h>
@@ -11,6 +23,7 @@
 #define lightsOnTime 18 // 20, subtract two hours (summer time)
 #define lightsOffTime 22 // 24, subtract two hours (summer time)
 
+// Sample ssid and pwd
 const char* ssid = "Heia Viking";
 const char* password = "jazz346skjagg";
 String msg = "";
