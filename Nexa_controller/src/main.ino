@@ -19,7 +19,7 @@ By Morten Salthe & the kids
 #include <WiFiUdp.h>
 
 #define rfPin D0
-
+#define nexa_sender_id 16619302 // Change this to your unique Nexa sender ID
 #define lightsOnTime 18 // 20, subtract two hours (summer time)
 #define lightsOffTime 22 // 24, subtract two hours (summer time)
 
@@ -27,20 +27,15 @@ By Morten Salthe & the kids
 const char* ssid = "Heia Viking";
 const char* password = "jazz346skjagg";
 String msg = "";
-
 IPAddress timeServerIP; // time.nist.gov NTP server address
 const char* ntpServerName = "time.nist.gov";
 const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
 byte packetBuffer[ NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets
 unsigned int localPort = 2390;      // local port to listen for UDP packets
-
 WiFiUDP udp;
-
-
 WiFiClient client;
 ESP8266WebServer server(80);
-NexaTransmitter remote(rfPin,  16619302); //sender 16619302 !group  on recipient 2 (0,1,2)
-
+NexaTransmitter remote(rfPin,  nexa_sender_id);
 
 void setup() {
   Serial.begin(115200);
